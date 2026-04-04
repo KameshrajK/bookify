@@ -12,8 +12,8 @@ export default [
     files: ['**/*.ts', '**/*.tsx'],
     languageOptions: {
       parser: tsParser,
-      globals: globals.browser, // ✅ THIS FIXES YOUR ISSUE
-    },
+      globals: globals.browser,
+    },  
     plugins: {
       '@typescript-eslint': tseslint,
       react: reactPlugin,

@@ -13,7 +13,8 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
-          <h1>Get started</h1>
+          <h1>#VenWeGo</h1>
+          <h4>One App for your Desire</h4>
         </div>
       </section>
     </>
