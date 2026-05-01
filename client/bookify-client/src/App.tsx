@@ -1,22 +1,16 @@
-import reactLogo from './assets/react.svg';
-import viteLogo from './assets/vite.svg';
-import heroImg from './assets/hero.png';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
+import AutoComplete from "./pages/AutoComplete";
 
 function App() {
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>#VenWeGo</h1>
-          <h4>One App for your Desire</h4>
-        </div>
-      </section>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/dashbord" element={<Dashboard/>} />
+        <Route path="/auto-complete" element= {<AutoComplete />} />
+      </Routes>
     </>
   );
 }
